@@ -1,79 +1,130 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 ul {
-    margin: 0;
+  margin: 0;
 }
 
 .danhmuc {
-    background-color: #2fa4e7;
-    padding: 20px;
+  background-color: #2fa4e7;
+  padding: 20px;
 }
 
 .danhmuc-danhsach {
-    display: flex;
-     list-style: none; /* Bỏ dấu chấm của thẻ li */
+  display: flex;
+  list-style: none; /*bỏ dấu chấm của list */
 }
 
 .danhmuc-muc {
-    margin: 10px;
+  margin: 10px;
 }
 
 .danhmuc-lienket {
-    color: white;
-    text-decoration: none; /* Bỏ dấu gạch chân của thẻ a */
-    font-size: x-large;
-    font-weight: bold;
+  color: white;
+  text-decoration: none; /*bỏ dấu gạch chân của thẻ a */
+  font-size: larger;
+  font-weight: bold;
 }
 
 .danhmuc-lienket:hover {
-    color: gray;
+  color: gray;
 }
 
 .logo {
-    background-color: gray;
-    height: 80px;
+  height: 80px;
+  background-color: #abc8d8;
 }
 
 main {
-    display: flex;
+  display: flex;
 }
 
 .noidung-trai {
-    width: 80%;
-    border-radius: 10px;
+  /* height: 1000px;
+  background-color: aqua; */
+  width: 80%;
+  border-radius: 10px;
 }
-
 .noidung-phai {
-    height: 1000px;
-    background-color: chocolate;
-    width: 20%;
+  height: 1000px;
+  /* background-color: chocolate; */
+  width: 20%;
+  margin-left: 20px;
 }
 
 .tieude {
-    background-color: #2fa4e7;
-    padding: 20px;
-    color: white;
-    font-size: x-large;
-    font-weight: bold;
-    border-radius: 10px 10px 0px 0px;
+  background-color: #2fa4e7;
+  padding: 20px;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .tintuc-danhsach {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .baiviet {
-    height: 200px;
-    background-color: gray;
-    width: 32%;
-    text-align: right;
+  /* height: 400px; */
+  background-color: skyblue;
+  width: 32%;
 }
 
-.noidung1 {
-    font-size: 25px;
+.thongbao {
+  /* border: 1px solid #ccc; */
+  border-radius: 6px;
+  margin-top: 20px;
+  /* overflow: hidden; */
+  background: #fff;
 }
 
+.Tbao-Ndung {
+  display: flex;
+}
 
+.img {
+  width: 25%;
+  font-size: 14px;
+}
+
+.noidung-thongbao {
+  width: 60%;
+  margin-left: 40px;
+  font-size: 18px;
+  list-style: none;
+  line-height: 2;
+}
+
+.thoigian-thongbao {
+  width: 15%;
+  font-size: 18px;
+  text-align: right;
+  list-style: none;
+  line-height: 2;
+}
+
+.huongdan {
+  margin-left: 20px;
+}
+.noidung-huongdan {
+  font-size: 18px;
+  width: 60%;
+  list-style: none;
+  line-height: 2;
+}
+
+.thoigian-huongdan {
+  font-size: 18px;
+  width: 40%;
+  text-align: right;
+  list-style: none;
+  line-height: 2;
+}
+
+.text {
+  text-decoration: none;
+  color: black;
+}
