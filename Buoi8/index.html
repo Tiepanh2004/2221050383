@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai JavaScript</title>
+    <script src="script.js"></script>
+    <!--Liên kết đến file JavaScript -->
+  </head>
+  <body>
+    <script>
+      document.writeln("Hello World!" + "<br>");
+      // Để khai báo biến JS dùng let hoặc var
+      // Cú pháp: let Tên biến = Giá trị;
+      // Để nối chuỗi JS dùng dấu +
+      let hoTen = "Pham Tiep Anh" + "<br>";
+
+      document.writeln(hoTen);
+
+      let soThuNhat = 10;
+      let soThuHai = 5;
+      let ketQua;
+
+      // Phép cộng +
+      // Phép trừ -
+      // Phép nhân *
+      // Phép chia /
+      //   ketQua = soThuNhat / soThuHai;
+
+      //   // Cộng thêm 1 đơn vị : ++ketQua
+      //   // Trừ thêm 1 đơn vị : --ketQua
+      //   document.writeln(ketQua + "<br>");
+
+      //   soThuNhat += soThuHai;
+      //   // soThuNhat = soThuNhat + soThuHai;
+      //   document.writeln(soThuNhat + "<br>");
+
+      //   soThuNhat %= 3;
+      //   document.writeln(soThuNhat + "<br>");
+
+      // ==  !=   ===   !==  >  <  >=   <=
+
+      let thongTinSinhVien = {
+        hoTen: "Pham Tiep Anh",
+        mssv: "2221050383",
+        gioiTinh: true,
+        tuoi: 21,
+        lop: "CNTTDH 67A",
+      };
+
+      let diaChiNhaAnh = {
+        thanhPho: "Nam Định",
+        phuong: "Nam Định",
+        duong: "ABC",
+        soNha: 123,
+      };
+
+      thongTinSinhVien.diaChi = diaChiNhaAnh;
+
+      //   let thongTinSinhVien = {
+      //     hoTen: "Pham Tiep Anh",
+      //     mssv: "2221050383",
+      //     gioiTinh: true,
+      //     tuoi: 21,
+      //     lop: "CNTTDH 67A",
+      //     diaChi: {
+      //       thanhPho: "Nam Dinh",
+      //       phuong: "Nam Dinh",
+      //       duong: "ABC",
+      //       soNha: 123,
+      //     },
+      //   };
+      document.writeln(
+        "Xin chao ban: " +
+          thongTinSinhVien.hoTen +
+          " " +
+          thongTinSinhVien.tuoi +
+          " " +
+          "tuoi" +
+          " Nhà ở " +
+          thongTinSinhVien.diaChi.thanhPho +
+          " " +
+          thongTinSinhVien.diaChi.phuong +
+          "<br>"
+      );
+
+      let namNay = 2025;
+      document.writeln(
+        "Bạn " +
+          thongTinSinhVien.hoTen +
+          " Sinh năm " +
+          (namNay - thongTinSinhVien.tuoi)
+      );
+
+      //   document.writeln(ketQua);
+    </script>
+  </body>
+</html>
