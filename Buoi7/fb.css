@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  width: 100%;
+}
+
+main {
+  background-color: #f2f4f7;
+  height: 700px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+}
+
+.noidung-trai {
+  /* background-color: aqua; */
+  width: 30%;
+  margin-top: 200px;
+  margin-left: 250px;
+  /* height: 500px; */
+}
+
+.noidung-phai {
+  width: 30%;
+  background-color: white;
+  margin-top: 200px;
+  margin-left: 100px;
+  height: 370px;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+
+.form-duoi {
+  width: 80%;
+  /* background-color: black; */
+  margin: auto;
+  border-bottom: 2px solid grey;
+  margin-top: 20px;
+}
+
+.dangnhap {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  height: 50px;
+  font-size: 15px;
+}
+
+.phan-ket {
+  display: flex;
+  /* height: 400px; */
+}
+/* footer {
+  background-color: yellowgreen;
+  height: 400px;
+} */
+
+.footer-trai {
+  width: 20%;
+  /* background-color: orange; */
+}
+
+.footer-giua {
+  width: 60%;
+  /* background-color: aqua; */
+}
+
+.footer-phai {
+  width: 20%;
+  /* background-color: #737373; */
+}
+.footer-1 {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  border-bottom: 1px solid grey;
+  padding: 0;
+}
+
+.danhmuc-lienket {
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.danhmuc-lienket a {
+  text-decoration: none;
+  color: #737373;
+}
+
+.text-1 {
+  margin-bottom: 10px;
+}
+
+.text a {
+  text-decoration: none;
+  color: #737373;
+  margin-right: 15px;
+}

@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  background-color: grey;
+  color: white;
+}
+
+.container {
+  background-color: black;
+  width: 35%;
+  margin: 40px auto;
+  padding: 40px 0;
+  border-radius: 15px;
+}
+
+.noidung {
+  width: 70%;
+  margin: auto;
+}
+
+.noidung-tren {
+  border-bottom: 2px solid gray;
+}
+.form {
+  text-align: center;
+}
+
+.logo {
+  font-size: 50px;
+}
+
+.khoi-nut {
+  padding-bottom: 15px;
+}
+
+button {
+  width: 90%;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+}
+
+.noidung-duoi {
+  padding-left: 20px;
+}
+
+.text a {
+  color: white;
+}
+
+a:hover {
+  color: green;
+}
