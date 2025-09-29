@@ -69,12 +69,14 @@
 
       // indexOf tra ra vi tri xuat hien dau tien
       // neu co : vi tri, neu k: -1
+      // document.writeln(myString.indexOf("e"));
+
       // let myString = "Hello KieN";
       // document.writeln(myString.includes(`e`));
 
       // Tach chuoi thanh mang
       // let myString = "Hello KieN";
-      // document.writeln(myString.split(``));
+      // document.writeln(myString.split("l"));
 
       // Kiem tra xem 1 chuoi co bat dau bang 1 chuoi con hay khong
       // let danhsach = [
@@ -91,19 +93,31 @@
       // document.writeln(typeof so);
       // document.writeln(typeof Number(so));
 
-      // parseInt("10.5"); //
-      // parseFloat("10.5");
+      // parseInt("10.5"); // Chuyển đổi chuỗi thành số nguyên
+      // parseFloat("10.5"); // Chuyển đổi chuỗi thành số thực
 
-      var pi = 3.14159;
-      pi.toFixed(2); //Ket qua 3.14
+      // var pi = 3.14159;
+      // pi.toFixed(2); //Ket qua 3.14
 
-      isNaN(10); //Ket qua true
+      isNaN(NaN); //Ket qua true
+      // Kiểm tra xem có phải giá trị NaN ( Not - a - number) không
       isFinite(10); //Ket qua true
+      // Kiểm tra xem có phải giá trị hữu hạn hay không
 
       //Date
       let toDay = new Date();
-      // document.writeln(toDay); //Ngay gio hien tai
+      document.writeln(toDay + "<br>"); //Ngay gio hien tai
       document.writeln(toDay.getDate()); // In ra ngày hiện tại
+
+      // Lấy ngày, tháng, năm:
+      // .getFullYear();
+      // .getMonth(); //0-11
+      // .getDate();
+
+      // Lấy giờ, phút, giây:
+      // .getHours();
+      // .getMinutes();
+      // .getSeconds();
     </script>
   </body>
 </html>
