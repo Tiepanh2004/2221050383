@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>bai 12</h1>
+    <!-- tao ham tinh diem a,b,c -->
+    <!-- tong = a*0.6 + b*0.3 +c*0.1  -->
+    <h2>tinh diem</h2>
+    <div>
+      diem a: <input type="number" id="diema" placeholder="nhap diem a" />
+    </div>
+    <div>
+      diem b: <input type="number" id="diemb" placeholder="nhap diem b" />
+    </div>
+    <div>
+      diem c: <input type="number" id="diemc" placeholder="nhap diem c" />
+    </div>
+    <div>
+      <button onclick="xemkqua()">tinh diem</button>
+    </div>
+    <div>ket qua: <input type="text" id="ketqua" /></div>
+
+    <script>
+      function xemkqua() {
+        let diema = parseFloat(document.getElementById("diema").value);
+        let diemb = parseFloat(document.getElementById("diemb").value);
+        let diemc = parseFloat(document.getElementById("diemc").value);
+        // document.writeln(diema);
+        // document.writeln(diemb);
+        // document.writeln(diemc);
+        let kq = tinhdiem(diema, diemb, diemc);
+
+        document.getElementById("ketqua").value = kq;
+      }
+
+      function tinhdiem(a, b, c) {
+        let tong;
+        let diemchu = "";
+
+        if (kiemtra(a, b, c) == true) {
+          tong = a * 0.6 + b * 0.3 + c * 0.1;
+
+          if (tong > 9) {
+            diemchu = "A+";
+          } else if (tong <= 9 && tong >= 8.5) {
+            diemchu = "A";
+          } else if (tong >= 8 && tong < 8.5) {
+            diemchu = "B+";
+          } else if (tong >= 7 && tong < 8) {
+            diemchu = "B";
+          } else if (tong < 7) {
+            diemchu = "C";
+          }
+
+          return "Tổng: " + tong.toFixed(2) + " - Điểm chữ: " + diemchu;
+        } else {
+          return "Điểm không hợp lệ!";
+        }
+      }
+
+      function kiemtra(a, b, c) {
+        let ketqua = true;
+        if (a < 0 || a > 10 || typeof a != "number") {
+          ketqua = false;
+        }
+        if (b < 0 || b > 10 || typeof b != "number") {
+          ketqua = false;
+        }
+        if (c < 0 || c > 10 || typeof c != "number") {
+          ketqua = false;
+        }
+        return ketqua;
+      }
+    </script>
+  </body>
+</html>
