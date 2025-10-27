@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .yeu-cau {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <h1>Tính chỉ số BMI</h1>
+    <p>Công thức: Cân năng / (Chiều cao * Chiều cao)</p>
+    <p>Cân nặng: Kg</p>
+    <p>Chiều cao: m</p>
+
+    <div class="yeu-cau">
+        <p>Tạo input cho phép nhập vào chiều cao cân nặng</p>
+        <p>Tạo nút bấm kiểm tra chỉ số BMI</p>
+        <p>Trường hợp 1: Người dùng không nhập hoặc nhập sai thông tin phải cảnh báo</p>
+        <p>Trường hợp 2: Nhập đúng, hiển thị được chỉ số BMI và hình ảnh tương ứng</p>
+    </div> -->
+    <h1>Chi so BMI</h1>
+    <div>
+      Nhap chieu cao:
+      <input type="number" id="chieucao" placeholder="Nhap chieu cao(m)" />
+    </div>
+    <div>
+      Nhap can nang:
+      <input type="number" id="cannang" placeholder="Nhap can nang(kg)" />
+    </div>
+    <div>
+      <button onclick="xemkqua()">Tinh chi so BMI</button>
+    </div>
+    <div>
+      <input type="text" id="ketqua" />
+    </div>
+    <!-- <div>
+      <img src="thieu.png" alt="" />
+    </div>
+    <div>
+      <img src="thua.png" alt="" />
+    </div>
+    <div>
+      <img src="binhthuong.png" alt="" />
+    </div>
+    <div>
+      <img src="beocapdo1.png" alt="" />
+    </div>
+    <div>
+      <img src="beonang.png" alt="" />
+    </div> -->
+    <script>
+      function xemkqua() {
+        let chieucao = parseFloat(document.getElementById("chieucao").value);
+        let cannang = parseFloat(document.getElementById("cannang").value);
+
+        tinhchisoBMI(chieucao, cannang);
+        document.getElementById("ketqua").value = tinhchisoBMI(
+          chieucao,
+          cannang
+        );
+      }
+
+      function tinhchisoBMI(chieucao, cannang) {
+        let BMI;
+        let phanloai = "";
+
+        if (kiemtra(chieucao, cannang) == true) {
+          BMI = cannang / (chieucao * chieucao);
+          if (BMI < 18.5) {
+            phanloai = "thieu";
+          } else if (BMI >= 18.5 && BMI < 24.9) {
+            phanloai = "Binh thuong";
+          } else if (BMI >= 25 && BMI < 29.9) {
+            phanloai = "Thua can";
+          } else if (BMI >= 30 && BMI < 39.9) {
+            phanloai = "Beo cap do 1";
+          } else if (BMI >= 40) {
+            phanloai = "Beo nang";
+          }
+          return "Chi so BMI: " + BMI.toFixed(1);
+        } else {
+          return "Thong so khong hop le";
+        }
+      }
+
+      function kiemtra(chieucao, cannang) {
+        let ketqua = true;
+
+        if (cannang < 0 || chieucao < 0) {
+          ketqua = false;
+        }
+        return ketqua;
+      }
+    </script>
+  </body>
+</html>
